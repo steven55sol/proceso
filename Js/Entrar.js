@@ -9,11 +9,11 @@ function startTime() {
     sec = checkTime(sec);
     let clock = document.getElementById("clock").innerHTML = hr + " : " + min + " : " + sec;
     let time = setTimeout(function(){ startTime() }, 500);
-   /* 
+    
     if(hr === 00 || hr == 12 || hr == 0 && min <= 59){
         btn.style.display="block";
     }
-    */
+    
 }
 
 function checkTime(i) {
