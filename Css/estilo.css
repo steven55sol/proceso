@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    position: relative;
+}
+.title-container{
+    display: block;
+    width: 100%;
+    position: absolute;
+    font-size: 58px;
+    top: 240px;
+    text-align: center;
+    text-shadow: 0px 0px 10px #111;
+}
+
+.globo_rosa{
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    animation: globo 8s infinite;
+}
+
+.globo_azul{
+    position: absolute;
+    width: 95px;
+    height: 250px;
+    bottom: 0;
+    left: 230px;
+    animation: globo2 10s infinite;
+}
+
+.globo_rojo{
+    position: absolute;
+    width: 235px;
+    bottom: 0px;
+    left: 350px;
+    animation: globo3 11s infinite ease;
+}
+
+.globo_azul2{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 340px;
+    animation: globo2 12s infinite;
+}
+
+
+.globo_azul3{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 145px;
+    animation: globo4 8s infinite;
+}
+
+.globo_rojo2{
+    position: absolute;
+    width: 235px;
+    bottom: 0px;
+    left: 540px;
+    animation: globo3 12s infinite ease;
+}
+
+.globo_azul4{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 750px;
+    animation: globo2 14s infinite;
+}
+
+.globo_azul5{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 850px;
+    animation: globo4 9s infinite;
+}
+
+.globo_rosa2{
+    position: absolute;
+    bottom: 0;
+    left: 940px;
+    animation: globo 10s infinite;
+}
+
+
+.globo_rosa3{
+    position: absolute;
+    bottom: 200px;
+    left: 1080px;
+    animation: globo 10s infinite;
+}
+@keyframes globo{
+    from{
+        bottom:0;
+        opacity: 0;
+    }
+    to{
+        bottom: 380px;
+        
+    }
+}
+
+@keyframes globo2{
+    from{
+        bottom: 0px;
+        opacity:0;
+    }
+    to{
+        bottom: 200px; 
+    }
+}
+
+@keyframes globo3{
+    from{
+        bottom: 150px;
+        opacity: 0;
+    }
+    to{
+        bottom: 340px;
+    }
+}
+
+
+@keyframes globo4{
+    from{
+        bottom: 200px;
+        opacity: 0;
+    }
+    to{
+        bottom: 400px;
+    }
+}
+
+
+.clockdate-wrapper {
+    position: absolute;
+    padding:5px;
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    top:300px;
+}
+#clock{
+    display: block;
+    font-family:fantasy;
+    font-size:50px;
+    text-shadow:0px 0px 10px #fff;
+    color:#111;
+}
+#clock span {
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+}
+#date {
+    letter-spacing:5px;
+    font-size:14px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+
+#btn{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 70px;
+    font-size: 27px;
+    font-family: monospace;
+    border: 2px solid #111;
+    border-radius: 50px;
+    background: #87f;
+    font-weight: bold;
+    top: 370px;
+    left: 540px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:280px){
+    .globo_rosa{
+        width: 145px;
+    }
+    .globo_azul{
+        width: 50px;
+        height: 140px;
+        left: 80px;
+    }
+    .globo_rojo{
+        animation: globo3 8s infinite;
+        width: 145px;
+        left: 130px;
+    }
+    .globo_azul2{
+        width: 80px;
+        left: 180px;
+    }
+    
+    .globo_azul3{
+        animation: globo 10s infinite;
+        left: 110px;
+    }
+    
+    .globo_rojo2{
+       display: none;
+    }
+    
+    .globo_rosa3{
+        width: 80px;
+        left:260px; 
+        animation: globo 20s infinite;
+    }
+
+    .globo_azul4{
+        display: none;
+    }
+
+    .globo_azul5{
+        display: none;
+    }
+
+    .globo_rosa2{
+        display: none;
+    }
+    
+@keyframes globo{
+    from{
+        bottom:0;
+        opacity: 0;
+    }
+    to{
+        bottom: 450px;
+        
+    }
+}
+
+@keyframes globo2{
+    from{
+        bottom: 0px;
+        opacity:0;
+    }
+    to{
+        bottom: 350px; 
+    }
+}
+
+@keyframes globo3{
+    from{
+        bottom: 100px;
+        opacity: 0;
+    }
+    to{
+        bottom: 250px;
+    }
+}
+
+@keyframes globo4{
+    from{
+        bottom: 90px;
+        opacity: 0;
+    }
+    to{
+        bottom: 430px;
+    }
+}
+    
+.clockdate-wrapper {
+    position: absolute;
+    padding:5px;
+    width:100%;
+    text-align:center;
+    margin:0 auto;
+    top:240px;
+}
+#clock{
+    display: block;
+    font-family:fantasy;
+    font-size:50px;
+    text-shadow:0px 0px 10px #fff;
+    color:#111;
+}
+#clock span {
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+}
+#date {
+    letter-spacing:5px;
+    font-size:14px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+    
+#btn{
+    display: block;
+    left: 60px;
+    top: 320px;
+}
+    
+.title-container{
+    font-size: 38px;
+    top:190px;        
+}   
+    
+}
+
+@media screen and (min-width:560px){
+    .title-container{
+        top: 40px;
+    }
+    
+    .clockdate-wrapper{
+        top:100px;
+    }
+    
+    #btn{
+        display:none;
+        left: 180px;
+        top: 180px;
+    }
+}
+
+@media only screen and (min-width:640px){
+    
+    .title-container{
+        top: 50px;
+        font-size: 55px;
+    }
+    
+    .clockdate-wrapper{
+        top: 120px;
+    } 
+    
+    #btn{
+    
+        top: 210px;
+        left: 220px;
+    }
+    
+    .globo_rojo2{
+        display: block;
+        left: 280px;
+    }
+    
+    .globo_azul3{
+        left: 520px;
+    }
+    
+}
+
+@media only screen and (min-width:768px){
+    .title-container{
+        top: 200px;
+        font-size: 68px;
+    }
+    
+    .clockdate-wrapper{
+        top: 280px;
+    }
+    
+    #btn{
+        display:none;
+        top: 350px;
+        left: 270px;
+    }
+    
+.globo_rosa{
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    animation: globo 8s infinite;
+}
+
+.globo_azul{
+    position: absolute;
+    width: 95px;
+    height: 250px;
+    bottom: 0;
+    left: 230px;
+    animation: globo2 10s infinite;
+}
+
+.globo_rojo{
+    position: absolute;
+    width: 235px;
+    bottom: 0px;
+    left: 380px;
+    animation: globo3 8s infinite ease;
+}
+
+.globo_azul2{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 340px;
+    animation: globo2 12s infinite;
+}
+
+
+.globo_azul3{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 145px;
+    animation: globo4 5s infinite;
+}
+
+.globo_rojo2{
+    display: block;
+    position: absolute;
+    width: 235px;
+    bottom: 0px;
+    left: 540px;
+    animation: globo3 8s infinite ease;
+}
+
+.globo_azul4{
+    position: absolute;
+    width: 85px;
+    height: 200px;
+    bottom: 0;
+    left: 750px;
+    animation: globo2 14s infinite;
+}
+
+.globo_azul5{
+    position: absolute;
+    width: 0px;
+    height: 200px;
+    bottom: 0;
+    left: 850px;
+    animation: globo4 9s infinite;
+}
+
+.globo_rosa2{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 750px;
+    animation: globo 10s infinite;
+}
+
+
+.globo_rosa3{
+    position: absolute;
+    bottom: 200px;
+    width: 200px;
+    left: 0900px;
+    animation: globo 10s infinite;
+}
+
+    
+}
+
+@media only screen and (min-width:1024px){
+    .title-container{
+         top: 200px;    
+    }
+    
+    .clockdate-wrapper{
+        top: 300px;
+        
+    }
+    
+    #btn{
+        display: none;
+        left: 540px;
+        top:380px
+    }
+    
+    
+}

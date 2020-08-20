@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 24%;
+    background: green;
+    display: flex;
+    position: absolute;
+    left: 200px;
+}
+
+.pocoyo{
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    width: 200px;
+    left: 0;
+    bottom: 0px;
+    transform: translateX(10px);
+    animation: salir 5s linear;
+}
+
+.pocoyo2{
+    visibility: hidden;
+    position: absolute;
+    width: 150px;
+    bottom: 0px;
+    left: 10px;
+    transform: translateX(0px);
+    animation: pocoyo 8s linear;
+    animation-delay: 5s;
+}
+
+.pocoyo3{
+    position: absolute;
+    width: 130px;
+    bottom: 25px;
+    left: 800px;
+    visibility: hidden;
+    animation: pocoyo2 10s linear infinite;
+    animation-delay: 13s;
+}
+
+.avion{
+    visibility: visible;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    transform: translateX(-200px);
+    animation: avion 8s linear;
+    animation-delay: 14s;
+}
+
+.Entrega{
+    visibility:hidden;
+    position: absolute;
+    width: 200px;
+    transform: translateY(80px);
+    left: 848px;
+    animation: entrega 8s linear;
+    animation-delay: 21s;
+}
+
+.regalo{
+    display: table;
+    visibility:hidden;
+    position: absolute;
+    width: 150px;
+    bottom: 10px;
+    left: 880px;
+    transform: rotate(5deg);
+    animation: regalo 1s linear infinite;
+    animation-delay:29s; 
+    cursor: pointer;
+}
+
+@keyframes salir {
+    0%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes pocoyo{
+    0%{
+        visibility: hidden;
+        transform: translateX(0px);
+    }
+    50%{
+        visibility: visible;
+        transform: translateX(800px);
+        
+    }
+    100%{
+        transform: translateX(800px);
+        visibility: hidden;
+    }
+}
+
+@keyframes pocoyo2{
+    0%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes avion{
+    0%{
+        visibility: visible;
+        transform: translateX(-200px);
+    }
+    100%{
+        visibility: hidden;
+        transform: translateX(1000px);
+        
+    }
+}
+
+@keyframes entrega{
+    0%{
+        visibility: hidden;
+        transform: translateY(80px);
+    }
+    50%{
+        visibility: visible;
+        transform: translateY(430px);
+    }
+    100%{
+        visibility: visible;
+        transform: translateY(430px);
+    }
+}
+
+@keyframes regalo{
+    0%{
+       transform: rotate(5deg);
+        visibility: hidden;
+    }
+    50%{
+      transform: rotate(-4deg);
+        visibility: visible;
+    }
+    100%{
+        transform: rotate(4deg);
+        visibility: visible;
+    }
+}
+
+.modal{
+    display:none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background: #111;
+    top: 100px;
+    left: 390px;
+    border-radius: 15px;
+}
+
+#icono{
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    left: 5px;
+    cursor: pointer;
+    top: 8px
+}
+
+.title{
+    display: none;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Pacifico';
+}
